@@ -1,12 +1,21 @@
+import { useState } from 'react';
 import './App.css';
+import Popup from './Components/Popup';
+
 
 function App() {
+  const[buttonpopup, setButtonpopup]= useState(false);
   return (
     <div className="App">
-      <header className="App-header">
-        <button className='bookingbutton'>Book</button>
+      <main>
+        <button className='book-btn' onClick={()=> setButtonpopup(true)}>Book Course
+        </button>
+      </main>
+        <Popup trigger={buttonpopup} setTrigger={setButtonpopup}>
+        </Popup>
         
-      </header>
+        
+      
     </div>
   );
 }

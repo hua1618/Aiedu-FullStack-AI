@@ -1,7 +1,7 @@
 .App {
   text-align: center;
 }
-.bookingbutton {
+.heading {
   display: flex;
   justify-items: end;
 }
@@ -34,4 +34,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+.book-btn{
+  background-color: yellow;
+  border: 0mm;
+  
 }
