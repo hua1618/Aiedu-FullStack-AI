@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import Popup from './Components/Popup';
+import Popup from './components/Popup';
 import CourseCard from './components/CourseCard';
 import RegisterForm from './components/RegisterForm';
 
