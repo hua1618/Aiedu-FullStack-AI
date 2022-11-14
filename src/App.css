@@ -1,37 +1,80 @@
-.App {
-  text-align: center;
-}
-.bookingbutton {
+/*style for App*/
+.section {
   display: flex;
-  justify-items: end;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-top: 20px;
+  background-image: radial-gradient(rgb(0, 0, 0), 20%, transparent 20%);
+  background-position: 500 500, 300px 300px;
+  background-size: 4px 4px;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headline {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/*style for CourseCard*/
+.coursecard {
+  background-color: whitesmoke;
+  width: 250px;
+}
+
+.coursename:hover {
+  color: rgb(86, 13, 203);
+}
+
+.coursecard:hover {
+  transition: box-shadow .3s;
+  box-shadow: 10px 10px grey;
+}
+
+.coursecardtop {
+  background-color: rgb(86, 13, 203);
+  background-image: radial-gradient(grey);
   color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.list {
+  list-style: none;
+  size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coursecardbottom {
+  padding: 20px;
+}
+
+.button {
+  background-color: rgb(255, 196, 0);
+  color: black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 30px;
+  border: 0px;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: rgb(86, 13, 203);
+  color: white;
+  transition: box-shadow .3s;
+  box-shadow: 0 0 5px 5px lightgray;
+}
+/*style for RegisterFrom*/
+input {
+  display: block;
+  padding: 5px;
+  height: 25px;
+}
+textarea {
+  display: block;
+  padding: 5px;
+  height: 25px;
 }
