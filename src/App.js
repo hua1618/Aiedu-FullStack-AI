@@ -14,8 +14,6 @@ function App() {
         <Popup trigger={buttonpopup} setTrigger={setButtonpopup}>
         </Popup>
         
-        
-      
     </div>
   );
 }
