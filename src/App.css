@@ -1,3 +1,13 @@
+
+.App {
+  text-align: center;
+}
+.heading {
+  display: flex;
+  justify-items: end;
+
+}
+
 /*style for App*/
 .section {
   display: flex;
@@ -73,6 +83,13 @@ input {
   padding: 5px;
   height: 25px;
 }
+
+.book-btn{
+  background-color: yellow;
+  border: 0mm;
+}
+  
+
 textarea {
   display: block;
   padding: 5px;
