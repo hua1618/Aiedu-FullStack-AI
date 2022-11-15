@@ -15,9 +15,6 @@ function App() {
       </main>
       <Popup trigger={buttonpopup} setTrigger={setButtonpopup}>
       </Popup>
-
-
-
       <section>
         <div className='headline'>
           <h1>Courses</h1>

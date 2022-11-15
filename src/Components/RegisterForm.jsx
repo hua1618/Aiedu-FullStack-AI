@@ -16,7 +16,6 @@ export default function RegisterForm() {
         codingSkills: ""
     });
 
-
     function handleChange(event) {
         const { name, value, type, checked } = event.target
         setFormData(prevFormData => {
@@ -25,7 +24,6 @@ export default function RegisterForm() {
                 [name]: type === "checkbox" ? checked : value
             }
         })
-
     }
     function handleSubmit(event) {
         event.preventDefault()

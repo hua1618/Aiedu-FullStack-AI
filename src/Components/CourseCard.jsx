@@ -16,11 +16,11 @@ export default function CourseCard() {
         </h3>
       </div>
       <div className="coursecardbottom">
-        <h2 className="coursename">Funding Coding</h2>
+        <h2 className="coursename">Fun Coding</h2>
         <p>Time: 15:30 - 16:30 (EET)<br />
-          Wednesdays</p>
+          Online | English | Wednesdays</p>
         <h3>€176</h3>
-        <h4 className="button">Book course</h4>
+        <h4 className="button">Register</h4>
       </div>
     </section>
   );
