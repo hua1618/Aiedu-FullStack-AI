@@ -1,7 +1,6 @@
 import React from "react";
-
-
 export default function CourseCard() {
+
   return (
     <section className="coursecard">
       <div className="coursecardtop">
@@ -20,7 +19,6 @@ export default function CourseCard() {
         <p>Time: 15:30 - 16:30 (EET)<br />
           Wednesdays</p>
         <h3>€176</h3>
-        <h4 className="button">Book course</h4>
       </div>
     </section>
   );

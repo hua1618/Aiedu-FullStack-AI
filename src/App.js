@@ -10,7 +10,7 @@ function App() {
 
     <div className="App">
       <main>
-        <button className='book-btn' onClick={() => setButtonpopup(true)}>Book Course
+        <button className='book-btn' onClick={() => setButtonpopup(true)}>Details
         </button>
       </main>
       <Popup trigger={buttonpopup} setTrigger={setButtonpopup}>
