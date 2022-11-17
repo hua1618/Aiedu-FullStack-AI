@@ -1,5 +1,6 @@
 import React from "react";
 import Details from "./Details";
+import Register from "./Register";
 
 export default function CourseInfo() {
   return (
@@ -18,10 +19,10 @@ export default function CourseInfo() {
       </div>
       <div className="coursecardbottom">
         <h2 className="coursename">Fun Coding</h2>
-        <p>Time: 15:30 - 16:30 (EET)<br />
-          Online | English | Wednesdays</p>
+        <p>Time: 15:30 - 16:30 (EET)<br />Weds 10/01 - 29/05 
+          <br />Online | English <br />Teacher: Ms. Jin</p>
         <h3>€176</h3>
-        <button className="button">Register</button>
+        <Register />
         <Details />
       </div>
     </section>

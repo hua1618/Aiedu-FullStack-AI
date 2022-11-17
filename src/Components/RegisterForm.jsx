@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Nav from "./Nav";
 
 export default function RegisterForm() {
     const [formData, setFormData] = useState({
@@ -32,6 +33,7 @@ export default function RegisterForm() {
 
     return (
         <div>
+            <Nav />
             <h1 className='headline'>Registration Form</h1>
             <form onSubmit={handleSubmit}>
                 <input

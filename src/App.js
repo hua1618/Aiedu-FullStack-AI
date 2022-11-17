@@ -1,25 +1,21 @@
-
+import React from 'react';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './App.css';
-import CourseCard from './components/CourseCard';
+import Home from './components/Home';
 import RegisterForm from './components/RegisterForm';
+import Blog from './components/Blog';
+import Login from './components/Login';
 
-function App() {
+
+export default function App(){
   return (
-    <div className="App">
-      <section>
-        <div className='headline'>
-          <h1>Courses</h1>
-        </div>
-        <div className="section">
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
-        </div>
-        <div>
-          <RegisterForm />
-        </div>
-      </section>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/RegisterForm" element={<RegisterForm />} />
+      <Route path="/Blog" element={<Blog/>} />
+      <Route path="/Login" element={<Login />} />
+    </Routes>
+    </BrowserRouter>
   );
 }
-export default App;
