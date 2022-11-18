@@ -15,10 +15,7 @@ export default function BookingForm() {
                 <h3> Course Fee: xxxx</h3>
             </div>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAQguELb1AvM578SDjCz3FsSc_Q8xIMOyGT6ymOjft-xoYOg/viewform?usp=sf_link" target="_blank" rel="noreferrer">
-                <button style={{
-                    backgroundColor: "yellow",
-                    border: 0
-                }}>Register
+                <button className='button'>Register
                 </button>
             </a>
         </>

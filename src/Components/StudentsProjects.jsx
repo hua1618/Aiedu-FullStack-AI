@@ -1,11 +1,11 @@
 import React from "react";
 import Nav from "./Nav";
 
-export default function Blog() {
+export default function StudentsProjects() {
     return (
         <div>
             <Nav />
-            <p>Blog</p>
+            <p>Students' Projects</p>
         </div>
     );
 }

@@ -20,7 +20,7 @@ export default function CourseInfo() {
       <div className="coursecardbottom">
         <h2 className="coursename">Fun Coding</h2>
         <p>Time: 15:30 - 16:30 (EET)<br />Weds 10/01 - 29/05 
-          <br />Online | English <br />Teacher: Ms. Jin</p>
+          <br />Online | English</p>
         <h3>€176</h3>
         <Register />
         <Details />

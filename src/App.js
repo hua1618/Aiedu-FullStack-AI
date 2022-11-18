@@ -3,7 +3,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './App.css';
 import Home from './components/Home';
 import RegisterForm from './components/RegisterForm';
-import Blog from './components/Blog';
+import StudentsProjects from './components/StudentsProjects';
 import Login from './components/Login';
 
 
@@ -13,7 +13,7 @@ export default function App(){
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/RegisterForm" element={<RegisterForm />} />
-      <Route path="/Blog" element={<Blog/>} />
+      <Route path="/StudentsProjects" element={<StudentsProjects/>} />
       <Route path="/Login" element={<Login />} />
     </Routes>
     </BrowserRouter>
