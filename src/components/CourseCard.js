@@ -2,9 +2,10 @@ import React from "react";
 
 
 export default function CourseCard() {
+  
   return (
     <section className="coursecard">
-      <div className="coursecardtop">
+    <div className="coursecardtop">
         <h1>JavaScript</h1>
         <h3><ul className="list">
           <li>Sequence</li>
@@ -20,7 +21,14 @@ export default function CourseCard() {
         <p>Time: 15:30 - 16:30 (EET)<br />
           Wednesdays</p>
         <h3>€176</h3>
-        <h4 className="button">Book course</h4>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAQguELb1AvM578SDjCz3FsSc_Q8xIMOyGT6ymOjft-xoYOg/viewform?usp=sf_link" target="_blank" rel="noreferrer">   
+        <button style={{
+            backgroundColor:"yellow", 
+            border:0}}>Book Course
+        </button>
+    </a>
+    
+        
       </div>
     </section>
   );
