@@ -1,7 +1,5 @@
 
-.App {
-  text-align: center;
-}
+
 .heading {
   display: flex;
   justify-items: end;
@@ -62,13 +60,11 @@
   background-color: rgb(255, 196, 0);
   color: black;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
+  width: 80px;
   height: 30px;
   border: 0px;
   font-weight: bold;
+  margin: 5px;
 }
 
 .button:hover {
@@ -85,8 +81,11 @@ input {
 }
 
 .book-btn{
-  background-color: yellow;
+  color: white;
+  background-color: rgb(86, 13, 203);
   border: 0mm;
+  width: 80px;
+  height: 30px;
 }
   
 

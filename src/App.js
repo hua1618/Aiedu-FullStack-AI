@@ -1,39 +1,22 @@
-import { useState } from 'react';
+import React from 'react';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './App.css';
-import Popup from './components/Popup';
-import CourseCard from './components/CourseCard';
+import Home from './components/Home';
 import RegisterForm from './components/RegisterForm';
+import StudentsProjects from './components/StudentsProjects';
+import Login from './components/Login';
 
-function App() {
-  const [buttonpopup, setButtonpopup] = useState(false);
+
+
+export default function App(){
   return (
-
-    <div className="App">
-      <main>
-        <button className='book-btn' onClick={() => setButtonpopup(true)}>Details
-        </button>
-      </main>
-      <Popup trigger={buttonpopup} setTrigger={setButtonpopup}>
-      </Popup>
-
-
-
-      <section>
-        <div className='headline'>
-          <h1>Courses</h1>
-        </div>
-        <div className="section">
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
-        </div>
-        <div>
-          <RegisterForm />
-        </div>
-      </section>
-    </div>
-
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/RegisterForm" element={<RegisterForm />} />
+      <Route path="/StudentsProjects" element={<StudentsProjects/>} />
+      <Route path="/Login" element={<Login />} />
+    </Routes>
+    </BrowserRouter>
   );
 }
-
-export default App;
