@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Nav from "./Nav";
 
 export default function RegisterForm() {
     const [formData, setFormData] = useState({
@@ -16,7 +17,6 @@ export default function RegisterForm() {
         codingSkills: ""
     });
 
-
     function handleChange(event) {
         const { name, value, type, checked } = event.target
         setFormData(prevFormData => {
@@ -25,7 +25,6 @@ export default function RegisterForm() {
                 [name]: type === "checkbox" ? checked : value
             }
         })
-
     }
     function handleSubmit(event) {
         event.preventDefault()
@@ -34,6 +33,7 @@ export default function RegisterForm() {
 
     return (
         <div>
+            <Nav />
             <h1 className='headline'>Registration Form</h1>
             <form onSubmit={handleSubmit}>
                 <input
