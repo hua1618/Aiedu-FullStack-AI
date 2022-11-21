@@ -6,13 +6,10 @@ export default function BookingForm() {
             <h1 className="h1">Course Details</h1>
             <div className='content'>
                 <h3> Course Name: xxxxx</h3>
-                <h3> Course Language</h3>
-                <h3> Price: xxxx</h3>
-                <h3> Course Calender</h3>
-                <h3> Course Time:</h3>
-                <h3> Note:</h3>
-                <h3> Needed Devices: Laptop or Ipad</h3>
-                <h3> Course Fee: xxxx</h3>
+                <h3> Course Time:xxx</h3>
+                <h3> Course Location: Online/Onsite</h3>
+                <h3> Needed Device: ipad or laptop</h3>
+                <h3> Course Fee:xxx</h3>
             </div>
     
         </>

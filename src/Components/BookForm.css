@@ -2,3 +2,6 @@
     background-color: aliceblue;
     font-style: oblique;
 }
+.content{
+    display: flex;
+flex-direction: column;}

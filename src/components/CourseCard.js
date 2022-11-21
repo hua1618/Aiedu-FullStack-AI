@@ -1,4 +1,5 @@
 import React from "react";
+import Popup from "./Popup";
 
 
 export default function CourseCard() {
@@ -27,6 +28,7 @@ export default function CourseCard() {
             border:0}}>Book Course
         </button>
     </a>
+    <Popup/>
     
         
       </div>
