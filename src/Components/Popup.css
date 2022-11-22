@@ -17,14 +17,15 @@
     width: 100%;
     max-width: 600px ;
     height: 450px;
-    background-color: rgb(173, 147, 240);
+    background-color: #DE9B6E;
 }
 
 .popup-inner .close-btn{
     position: absolute;
     top: 16px;
     right: 16px;
-    background-color: yellow;
     border: 0mm;
+    background-color: rgb(255, 196, 0);
+    
 
 }
