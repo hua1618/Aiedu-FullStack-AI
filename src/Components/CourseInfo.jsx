@@ -2,7 +2,7 @@ import React from "react";
 import Details from "./Details";
 import Register from "./Register";
 
-export default function CourseInfo() {
+export default function CourseInfo(props) {
   return (
     <section className="coursecard">
       <div className="coursecardtop">

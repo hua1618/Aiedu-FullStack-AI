@@ -1,9 +1,22 @@
+import { useState, useEffect } from "react";
+
 import React from "react";
 import CourseInfo from "./CourseInfo";
 import Nav from "./Nav";
 import '../App.css';
+import { fetchCourseData } from "../fetch-data.js";
 
 function Home() {
+  const [courseData, setCourseData] = useState();
+  const fetchData = async function () {
+    const data = await fetchCourseData();
+    setCourseData(data);
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+
   return (
     <div className="App">
       <Nav />
@@ -12,9 +25,8 @@ function Home() {
           <h1>Courses</h1>
         </div>
         <div className="section">
-          <CourseInfo />
-          <CourseInfo />
-          <CourseInfo />
+          {courseData && courseData.data.CourseData.map(course => <CourseInfo course = {course} /> )}
+          
         </div>
       </section>
     </div>
