@@ -1,14 +1,17 @@
 const ENDPOINT_URL = "https://internal-ghost-70.hasura.app/v1/graphql";
 const COMMENTS_QUERY = `
-query lookupCustomerOrder {
+query GetCourseData {
   CourseData {
+    price
     course_code
     course_description
     course_name
     language
     location
-    price
     time
+    teacher_name
+    days
+    age
   }
 }
 
