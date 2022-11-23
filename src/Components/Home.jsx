@@ -25,7 +25,7 @@ function Home() {
           <h1>Courses</h1>
         </div>
         <div className="section">
-          {courseData && courseData.data.CourseData.map(course => <CourseInfo course = {course} /> )}
+          {courseData && courseData.data.CourseData.map(course => <CourseInfo key ={course.id} course = {course} /> )}
           
         </div>
       </section>
