@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Popup from '../components/Popup';
 import '../App.css';
 
-export default function Details () {
+export default function Details ({course}) {
     const [buttonpopup, setButtonpopup] = useState(false);
     return (
         <div className="App">
@@ -11,7 +11,7 @@ export default function Details () {
                 <button className='button' onClick={() => setButtonpopup(true)}>Details
                 </button>
             </main>
-            <Popup trigger={buttonpopup} setTrigger={setButtonpopup}></Popup>
+            <Popup course = {course} trigger={buttonpopup} setTrigger={setButtonpopup}></Popup>
         </div>
     );
 }

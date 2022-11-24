@@ -15,9 +15,9 @@
     position: relative;
     padding: 32px;
     width: 100%;
-    max-width: 600px ;
-    height: 450px;
-    background-color: #DE9B6E;
+    max-width: 800px ;
+    height: 700px;
+    background-color: whitesmoke;
 }
 
 .popup-inner .close-btn{

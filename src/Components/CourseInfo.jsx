@@ -20,7 +20,7 @@ export default function CourseInfo({course}) {
           <br />{course.location} | {course.language}</p>
         <h3>{course.price} €</h3>
         <Register />
-        <Details />
+        <Details course={course} />
       </div>
     </section>
   );
