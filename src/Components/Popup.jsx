@@ -2,13 +2,16 @@ import React from "react";
 import BookingForm from "./BookingForm";
 import './Popup.css'
 
-export default function Popup(props) {
-    return (props.trigger)? (
+
+export default function Popup({setTrigger,course,trigger,children}) {
+
+    return (trigger)? (
         <div className="popup">
             <div className="popup-inner">
-                <BookingForm/>
-                <button className="close-btn" onClick={()=> props.setTrigger(false) }>Close</button>
-                {props.childer}
+            <BookingForm course = {course}/> 
+/>
+                <button className="close-btn" onClick={()=> setTrigger(false) }>X</button>
+                {children}
             </div>
         </div>
     ): "";

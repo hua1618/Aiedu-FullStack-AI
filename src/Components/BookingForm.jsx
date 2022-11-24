@@ -1,23 +1,23 @@
 // This Booking form component will contain all the course details.
 import './BookForm.css';
-export default function BookingForm() {
+
+export default function BookingForm({course}) {
     return (
         <>
             <h1 className="h1">Course Details</h1>
             <div className='content'>
-                <h3> Course Name: xxxxx</h3>
-                <h3> Course Language</h3>
-                <h3> Price: xxxx</h3>
-                <h3> Course Calender</h3>
-                <h3> Course Time:</h3>
-                <h3> Note:</h3>
-                <h3> Needed Devices: Laptop or Ipad</h3>
-                <h3> Course Fee: xxxx</h3>
+                <h4> Course Name: {course.course_name}</h4>
+                <p> Course Time: {course.time}</p>
+                <p> Course Location: {course.location}</p>
+                <p> Needed Device: ipad or laptop</p>
+                <p> Course Fee:{course.price}</p>
+                <p> Course Language:{course.language} </p>
+                <p> Note:</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAQguELb1AvM578SDjCz3FsSc_Q8xIMOyGT6ymOjft-xoYOg/viewform?usp=sf_link" target="_blank" rel="noreferrer">
+                    <button className='button'>Register
+                    </button>
+                </a>
             </div>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAQguELb1AvM578SDjCz3FsSc_Q8xIMOyGT6ymOjft-xoYOg/viewform?usp=sf_link" target="_blank" rel="noreferrer">
-                <button className='button'>Register
-                </button>
-            </a>
         </>
     );
 }
