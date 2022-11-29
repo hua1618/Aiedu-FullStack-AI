@@ -1,9 +1,11 @@
 nav { 
     display: flex;
     align-items: center;
+    
     height: 90px;
     padding: 10px;
     background-color: bisque;
+    
     }
 nav > img{
 height: 50px;
@@ -12,4 +14,6 @@ nav > h4 {
     margin: 20px;
     display: flex;
     flex-direction: flex-end;
+    color: #03989E;
+    text-decoration: none;
 }
