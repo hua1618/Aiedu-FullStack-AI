@@ -10,7 +10,7 @@ export default function Popup({setTrigger,course,trigger,children}) {
             <div className="popup-inner">
             <BookingForm course = {course}/> 
 
-                <button className="close-btn" onClick={()=> setTrigger(false) }>X</button>
+                <button type = "button" className="close-btn" onClick={()=> setTrigger(false) }>Close</button>
                 {children}
             </div>
         </div>
