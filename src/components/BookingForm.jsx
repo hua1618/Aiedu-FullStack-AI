@@ -1,7 +1,7 @@
 // This Booking form component will contain all the course details.
 import './BookForm.css';
 
-export default function BookingForm({course}) {
+export default function BookingForm({ course }) {
     return (
         <>
             <h1 className="h1">Course Details</h1>
