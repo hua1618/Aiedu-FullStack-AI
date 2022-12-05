@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Nav from "./Nav";
+import './RegisterForm.css';
 
 export default function RegisterForm() {
     const [formData, setFormData] = useState({
@@ -32,11 +33,15 @@ export default function RegisterForm() {
     }
 
     return (
-        <div>
+        <div className="RegisterForm" style={{position:"relative"}}>
             <Nav />
             <h1 className='headline'>Registration Form</h1>
+            <div style={{display: "flex",
+    alignItems: "center",
+    justifyContent: "center"}}>
             <form onSubmit={handleSubmit}>
                 <input
+                    className="input--box"
                     type="text"
                     name="yourName"
                     placeholder="Your Name"
@@ -45,6 +50,7 @@ export default function RegisterForm() {
                 />
                 <br />
                 <input
+                    className="input--box"
                     type="text"
                     name="email"
                     placeholder="Email"
@@ -54,6 +60,7 @@ export default function RegisterForm() {
                 <br />
 
                 <input
+                    className="input--box"
                     type="number"
                     name="phone"
                     placeholder="Phone Number"
@@ -62,6 +69,7 @@ export default function RegisterForm() {
                 />
 
                 <input
+                    className="check"
                     type="checkbox"
                     name="whatsApp"
                     id="whatsApp"
@@ -72,6 +80,7 @@ export default function RegisterForm() {
                 <br />
                 <br />
                 <input
+                    className="input--box"
                     type="text"
                     name="studentName"
                     placeholder="Student's Name"
@@ -81,6 +90,7 @@ export default function RegisterForm() {
                 <br />
 
                 <input
+                    className="input--box"
                     type="number"
                     name="studentAge"
                     placeholder="Student's Age"
@@ -165,15 +175,16 @@ export default function RegisterForm() {
                 </select>
                 <br />
                 <br />
-
+                <label>Your comments</label><br/>
                 <textarea
-                    placeholder="Comments (i.e. allergy or else"
+                    placeholder="Type..."
                     name="comments"
                     value={formData.comments}
                     onChange={handleChange}
                 /><br />
-                <button>Register</button>
+                <button className="button" >Register</button>
             </form>
+            </div>
         </div >
     )
 };

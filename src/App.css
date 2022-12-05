@@ -18,9 +18,7 @@
 }
 
 .headline {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 /*style for CourseCard*/
@@ -39,7 +37,7 @@
 }
 
 .coursecardtop {
-  background-color: #DE9B6E;
+  background-color: #03989E;
   background-image: radial-gradient(grey);
   color: white;
   padding: 20px;
@@ -55,22 +53,24 @@
 }
 
 .button {
-  background-color: rgb(255, 196, 0);
-  color: black;
+  background-color: #03989E;
+  color: white;
   border-radius: 5px;
   width: 80px;
   height: 30px;
-  border: 0px;
+  border: 10px;
   font-weight: bold;
   margin: 5px;
+  text-decoration: none;
 }
 
 .button:hover {
-  background-color: #03989E;
-  color: white;
+  background-color: bisque;
+  color: #03989E;
   transition: box-shadow .3s;
-  box-shadow: 0 0 5px 5px lightgray;
+  box-shadow: 4px 4px grey;
 }
+
 /*style for RegisterFrom*/
 input {
   display: block;
@@ -78,17 +78,38 @@ input {
   height: 25px;
 }
 
-.book-btn{
+.book-btn {
   color: white;
   background-color: #03989E;
   border: 0mm;
   width: 80px;
   height: 30px;
 }
-  
 
 textarea {
-  display: block;
   padding: 5px;
-  height: 25px;
+  width: 300px;
+  min-height: 100px;
+  box-shadow: 3px 3px rgb(220, 220, 220);
+}
+
+select {
+  width: 308px;
+  height: 35px;
+  box-shadow: 3px 3px rgb(220, 220, 220);
+}
+
+fieldset {
+  display: flex;
+  flex-direction: row;
+  justify-items: space-between;
+  border-width: 1px;
+  position: relative;
+  background-color: white;
+  box-shadow: 3px 3px rgb(220, 220, 220);
+}
+
+.check {
+  display: flex;
+  flex-direction: row;
 }

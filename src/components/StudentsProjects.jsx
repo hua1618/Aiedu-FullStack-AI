@@ -5,7 +5,7 @@ export default function StudentsProjects() {
     return (
         <div>
             <Nav />
-            <p>Students' Projects</p>
+            <h2 style={{textAlign:"center"}}>Students' Projects</h2>
         </div>
     );
 }

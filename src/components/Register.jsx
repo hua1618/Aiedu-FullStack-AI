@@ -4,6 +4,6 @@ import '../App.css';
 
 export default function Register (){
     return(
-        <button className="button"><Link to="/RegisterForm">Register</Link></button>
+        <button className="button"><Link to="/RegisterForm" style={{textDecoration:"none", color:"white"}}>Register</Link></button>
     )
 }
