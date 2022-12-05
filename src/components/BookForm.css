@@ -1,4 +1,4 @@
-.h1{
+.h1 {
     background-color: #DE9B6E;
     font-style: oblique;
     color: white;
@@ -7,9 +7,10 @@
     justify-content: center;
     height: 20px;
     padding: 20px;
-
 }
-.content{
-    display: flex;
-flex-direction: column;}
 
+.content {
+    display: flex;
+    flex-direction: column;
+    background: none;
+}

@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-
 import React from "react";
 import CourseInfo from "./CourseInfo";
 import Nav from "./Nav";
 import '../App.css';
 import { fetchCourseData } from "../fetch-data.js";
+
 
 function Home() {
   const [courseData, setCourseData] = useState();
@@ -16,7 +16,6 @@ function Home() {
     fetchData();
   }, []);
 
-
   return (
     <div className="App">
       <Nav />
@@ -25,8 +24,7 @@ function Home() {
           <h1>Courses</h1>
         </div>
         <div className="section">
-          {courseData && courseData.data.CourseData.map(course => <CourseInfo key ={course.id} course = {course} /> )}
-          
+          {courseData && courseData.data.CourseData.map(course => <CourseInfo key={course.id} course={course} />)}
         </div>
       </section>
     </div>

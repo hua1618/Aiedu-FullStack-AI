@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Nav from "./Nav";
-import '../App.css';
+import './Login.css';
 
 export default function Login() {
     const [formData, setFormData] = useState({
@@ -34,16 +34,17 @@ export default function Login() {
     return (
         <div>
             <Nav />
-            <div className="form--input">
-                <form className="form" onSubmit={handleSubmit}>
+            <h2>Login</h2>
+            <div className="form">
+                <form onSubmit={handleSubmit}>
                     <input
                         type="email"
-                        placeholder="Email address"
                         className="form--input"
+                        placeholder="Email address"
                         name="email"
                         onChange={handleChange}
                         value={formData.email}
-                    />
+                    /><br/>
                     <input
                         type="password"
                         className="form--input"
@@ -51,7 +52,7 @@ export default function Login() {
                         name="password"
                         onChange={handleChange}
                         value={formData.password}
-                    />
+                    /><br/>
                     <input
                         type="password"
                         className="form--input"
@@ -59,7 +60,7 @@ export default function Login() {
                         name="passwordConfirm"
                         onChange={handleChange}
                         value={formData.passwordConfirm}
-                    />
+                    /><br/>
                     <div className="form--marketing">
                         <input
                             id="okToEmail"
@@ -69,8 +70,8 @@ export default function Login() {
                             checked={formData.joinedNewsletter}
                         />
                         <label htmlFor="okToEmail">I agree to receive marketing Newsletters</label>
-                    </div>
-                    <button>Sign up</button>
+                    </div><br/>
+                    <button className="button">Sign up</button>
                 </form>
             </div>
         </div>

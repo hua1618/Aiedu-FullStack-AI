@@ -1,3 +1,11 @@
 .RegisterForm{
-    display: block;
+    background-image: radial-gradient(rgb(0, 0, 0), 20%, transparent 20%);
+    background-position: 500 500, 300px 300px;
+    background-size: 4px 4px;
+    width: 100%;
+}
+.input--box{
+    width: 300px;
+    box-shadow: 3px 3px rgb(220, 220, 220);
+    border-width: 1px;
 }

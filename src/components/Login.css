@@ -1,0 +1,28 @@
+.form--input{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+    box-shadow: 3px 3px rgb(220, 220, 220);
+    border-width: 1px;
+}
+.form--marketing{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+body{
+    background-image: radial-gradient(rgb(0, 0, 0), 20%, transparent 20%);
+    background-position: 500 500, 300px 300px;
+    background-size: 4px 4px;
+    width: 100%;
+}
+h2{
+    text-align: center;
+}
