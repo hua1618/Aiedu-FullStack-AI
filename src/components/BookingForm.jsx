@@ -10,7 +10,7 @@ export default function BookingForm({ course }) {
                 <p> Course Time: {course.time}</p>
                 <p> Course Location: {course.location}</p>
                 <p> Needed Device: ipad or laptop</p>
-                <p> Course Fee: {course.price} €</p>
+                <p> Course Fee: {course.price} € </p>
                 <p> Course Language:{course.language} </p>
                 <p> Note:</p>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTrbfXRB1CJUSnhuaf0t2ai6_GTZhZh54nyyd4pZZ6DzipwA/viewform" target="_blank" rel="noreferrer">
