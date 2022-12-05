@@ -10,7 +10,11 @@ export default function CourseInfo({course}) {
         <h3>
           <ul className="list" >
             <li>{course.course_description}</li>
-            
+            <li>{course.description2}</li>
+            <li>{course.description3}</li>
+            <li>{course.description4}</li>
+            <li>{course.description5}</li>
+            <li>{course.description6}</li>
           </ul>
         </h3>
       </div>

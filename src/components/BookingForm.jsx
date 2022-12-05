@@ -13,7 +13,7 @@ export default function BookingForm({ course }) {
                 <p> Course Fee:{course.price}</p>
                 <p> Course Language:{course.language} </p>
                 <p> Note:</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeAQguELb1AvM578SDjCz3FsSc_Q8xIMOyGT6ymOjft-xoYOg/viewform?usp=sf_link" target="_blank" rel="noreferrer">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTrbfXRB1CJUSnhuaf0t2ai6_GTZhZh54nyyd4pZZ6DzipwA/viewform" target="_blank" rel="noreferrer">
                     <button className='button'>Register
                     </button>
                 </a>
