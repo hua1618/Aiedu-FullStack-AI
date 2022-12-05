@@ -9,8 +9,7 @@ export default function Popup({setTrigger,course,trigger,children}) {
         <div className="popup">
             <div className="popup-inner">
             <BookingForm course = {course}/> 
-
-                <button type = "button" className="close-btn" onClick={()=> setTrigger(false) }>Close</button>
+                <button type = "button" className="close-btn" onClick={()=> setTrigger(false) }>x</button>
                 {children}
             </div>
         </div>
