@@ -15,7 +15,8 @@ function Home() {
   useEffect(() => {
     fetchData();
   }, []);
-
+  // this is the code to put them in order.
+const coursesInOrder = courseData && [...courseData.data.CourseData].sort((a, b) => a.course_name.localeCompare(b.course_name));
   return (
     <div className="App">
       <Nav />
@@ -24,7 +25,7 @@ function Home() {
           <h1>Courses</h1>
         </div>
         <div className="section">
-          {courseData && courseData.data.CourseData.map(course => <CourseInfo key={course.id} course={course} />)}
+        {courseData && coursesInOrder.map(course => <CourseInfo key={course.id} course={course} />)}
         </div>
       </section>
     </div>
