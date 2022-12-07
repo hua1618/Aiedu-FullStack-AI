@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Nav from "./Nav";
 import './RegisterForm.css';
+import {submitRegistrationData} from "../fetch-data";
 
 export default function RegisterForm() {
     const [formData, setFormData] = useState({
@@ -30,6 +31,7 @@ export default function RegisterForm() {
     function handleSubmit(event) {
         event.preventDefault()
         console.log(formData)
+        submitRegistrationData(formData)
     }
 
     return (

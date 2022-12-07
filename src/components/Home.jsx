@@ -16,7 +16,8 @@ function Home() {
     fetchData();
   }, []);
   // this is the code to put them in order.
-const coursesInOrder = courseData && [...courseData.data.CourseData].sort((a, b) => a.course_name.localeCompare(b.course_name));
+  console.log("courseData", courseData)
+  const coursesInOrder = courseData && courseData.data && [...courseData.data.CourseData].sort((a, b) => a.course_name.localeCompare(b.course_name));
   return (
     <div className="App">
       <Nav />
@@ -25,7 +26,7 @@ const coursesInOrder = courseData && [...courseData.data.CourseData].sort((a, b)
           <h1>Courses</h1>
         </div>
         <div className="section">
-        {courseData && coursesInOrder.map(course => <CourseInfo key={course.id} course={course} />)}
+          {coursesInOrder && coursesInOrder.map(course => <CourseInfo key={course.id} course={course} />)}
         </div>
       </section>
     </div>
