@@ -5,6 +5,6 @@ import { BrowserRouter } from 'react-router-dom';
 const course = { course_name: 'JavaScript 1' }
 test('renders learn react link', () => {
   render(<Popup trigger={true} course={course} />, { wrapper: BrowserRouter });
-  const linkElement = screen.getByRole('button', { name: /Close/i });
+  const linkElement = screen.getByRole('button', { name: /x/i });
   expect(linkElement).toBeInTheDocument();
 });
