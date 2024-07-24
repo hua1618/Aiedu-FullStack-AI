@@ -1,4 +1,4 @@
-Aiedus | The final Project 
+Aiedu | The final Project 
 
 
 
